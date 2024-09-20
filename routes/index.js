@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/year', (req, res) => {
-  const current = new Date().getFullYear();
-  res.json({ now: current });
- });
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
 
 module.exports = router;
